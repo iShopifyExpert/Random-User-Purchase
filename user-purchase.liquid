@@ -1,0 +1,18 @@
+{{ 'user-purchase.css' | asset_url | stylesheet_tag }}
+{{ 'date.format.js' | asset_url | script_tag }}
+{{ 'user-purchase.js' | asset_url | script_tag }}
+<div class="grid no-marg-left">
+  <div class="grid__item user-purchase">
+    <div class="grid">
+      <div class="grid__item one-quarter">
+      <img id="user-pic" />
+      </div>
+      <div class="grid__item three-quarters">
+        <div class="user-details text-left">
+          <span id="fName"></span> from <span id="city"></span> recently purchased the {{product.title}}
+        </div>
+        <p id="user-date" class="text-left"></p>
+      </div>
+    </div>
+  </div>
+</div>
